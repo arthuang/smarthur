@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="dices" wx:if="{{isShow}}">
+    <block wx:for="{{dices}}" wx:for-item="i">
+      <view class="dice dice-{{i}}"></view>
+    </block>
+  </view>
+  <view class="btn-group">
+    <button bindtap="shake" size="mini">摇一摇</button>
+    <button bindtap="hide" size="mini">{{hideBtnTxt}}</button>
+  </view>
+</view>
+
